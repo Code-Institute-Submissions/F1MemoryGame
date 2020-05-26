@@ -20,3 +20,21 @@ This project is designed for Formula One fans like myself with the goal of provi
 - <a href="#credits">Credits</a>
 
 <span id="ux"></span>
+
+## UX
+
+### User Goals
+
+I expect that the majority of the users will fall into the following criteria:
+
+- Be a Forumula One Fan
+- A user looking for a time waster
+- A user looking for a challenging memory challenge
+
+### User Stories
+
+- As a user, I want the site to simple to use and visually appealing.
+- As a user, I want the cards to be shuffled everytime I play it.
+- As a user, I want to be able to see how well I am playing the game (Score).
+- As a user, I want instructions on how to play the game.
+- As a user, I want to have fun!.
