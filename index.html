@@ -1,15 +1,33 @@
 <!DOCTYPE html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>F1 Memory Game</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="assets/css/style.css">
-    </head>
-    <body>
-        
-        
-        <script src="assets/js/game.js"></script>
-    </body>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>F1 Memory Game</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Page Title -->
+    <h1 class="title"> Formula 1 Memory Game</h1>
+
+    <!-- Game Area -->
+    <div class="game-container">
+        <div class="info-container">
+            <div class="game-info">
+                Time Remaining: <span id="time-remaining">1000</span>
+            </div>
+            <div class="game-info">
+                Score: <span id="score">1000</span>
+            </div>
+            <div class="game-info">
+                Moves: <span id="moves">0</span>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/game.js"></script>
+</body>
+
 </html>
