@@ -24,8 +24,16 @@ body {
     background-color: black;
 }
 
+.info-container {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+}
+
 .game-container {
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(5, auto);
     grid-gap: 20px;
+    justify-content: center;
+    margin: 20px;
 }
