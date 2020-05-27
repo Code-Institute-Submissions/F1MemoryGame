@@ -1,1 +1,19 @@
 @import url("https://fonts.googleapis.com/css?family=Racing+Sans+One:100,200,300,400,500,600,700&display=swap");
+
+body {
+    margin: 0;
+    font-family: 'Racing Sans One', sans-serif;
+    background: url("https://www.formula1.com/content/dam/fom-website/manual/Misc/2019-Top-Shots/Italy/XPB_1005657_HiRes.jpg") no-repeat 50% 0%;
+}
+
+.title {
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    font-weight: normal;
+}
+
+.game-info {
+    color: #fff;
+    font-size: 25px;
+}
