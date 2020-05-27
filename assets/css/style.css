@@ -3,7 +3,7 @@
 body {
     margin: 0;
     font-family: 'Racing Sans One', sans-serif;
-    background: url("https://www.formula1.com/content/dam/fom-website/manual/Misc/2019-Top-Shots/Italy/XPB_1005657_HiRes.jpg") no-repeat 50% 0%;
+    background: url("../images/background-image.jpg") no-repeat 50% 0%;
 }
 
 .title {
@@ -19,9 +19,10 @@ body {
 }
 
 .card {
-    height: 200px;
+    height: 175px;
     width: 100px;
-    background-color: black;
+    background-color: #fff;
+    border-radius: 0.5rem;
 }
 
 .info-container {
@@ -36,4 +37,9 @@ body {
     grid-gap: 20px;
     justify-content: center;
     margin: 20px;
+}
+
+.f1-logo {
+    width: 100px;
+    height: 175px;
 }
