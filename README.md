@@ -38,3 +38,21 @@ I expect that the majority of the users will fall into the following criteria:
 - As a user, I want to be able to see how well I am playing the game (Score).
 - As a user, I want instructions on how to play the game.
 - As a user, I want to have fun!.
+
+<span id="credits"></span>
+
+## Credits
+
+### Content
+
+
+
+### Media
+
+- The Formula 1 Logo was taken from the [Formula 1 Official Site](https://www.formula1.com/).
+- The background image used was taken from the [Formula 1 Official Site](https://www.formula1.com/).
+
+### Acknowledgements
+
+- I received inspiration for this project from [WebDevSimplified](https://github.com/WebDevSimplified) and their [Mix-Or-Match project](https://github.com/WebDevSimplified/Mix-Or-Match).
+- **Gerard McBride** for helping me through the project with his advice and guidance.   
