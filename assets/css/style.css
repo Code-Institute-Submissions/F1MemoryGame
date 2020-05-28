@@ -6,11 +6,6 @@ body {
     background: url("../images/background-image.jpg") repeat;
 }
 
-span {
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
 .title {
     text-align: center;
     color: #fff;
@@ -65,7 +60,7 @@ span {
     width: 220px;
 }
 
-.card-front{
+.card-front {
     transform: rotateY(180deg);
 }
 
@@ -106,8 +101,10 @@ span {
     z-index: 1;
 }
 
-.overlay-text-small {
-    font-size: 40px;  
+.overlay-text-small span {
+    font-size: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .overlay-text.visible {
@@ -121,6 +118,7 @@ span {
         background-color: rgba(0, 0, 0, 0);
         font-size: 0px;
     }
+
     to {
         background-color: rgba(0, 0, 0, .8);
         font-size: 75px;
@@ -131,7 +129,7 @@ span {
     .game-container {
         grid-template-columns: repeat(1, auto);
     }
-    
+
     .info-container {
         flex-direction: column;
         align-items: center;
@@ -142,10 +140,23 @@ span {
     .game-container {
         grid-template-columns: repeat(2, auto);
     }
-    
+
     .info-container {
         flex-direction: column;
         align-items: center;
+    }
+}
+
+@media (max-width: 675px) {
+    .overlay-text{
+        text-align: center;
+    }
+
+    .overlay-text-small span {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0px;
+        padding-right: 0px;
     }
 }
 
@@ -153,7 +164,7 @@ span {
     .game-container {
         grid-template-columns: repeat(3, auto);
     }
-    
+
     .info-container {
         flex-direction: column;
         align-items: center;
