@@ -51,6 +51,7 @@ body {
     grid-gap: 20px;
     justify-content: center;
     margin: 20px;
+    perspective: 500px;
 }
 
 .f1-logo {
@@ -78,6 +79,7 @@ body {
     display: flex;
     justify-content: center;
     backface-visibility: hidden;
+    transition: transform 500ms ease-in-out;
 }
 
 .f1-car {
