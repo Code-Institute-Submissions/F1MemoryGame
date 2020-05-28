@@ -1,5 +1,5 @@
 $(document).ready(function () {
     $('#start').click(function () {
-        $(this).removeClass('visible');
+        $(this).parent().removeClass('visible');
     });
 });
