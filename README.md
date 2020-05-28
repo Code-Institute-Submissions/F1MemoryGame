@@ -51,6 +51,7 @@ I expect that the majority of the users will fall into the following criteria:
 
 - The Formula 1 Logo was taken from the [Formula 1 Official Site](https://www.formula1.com/).
 - The background image used was taken from the [Formula 1 Official Site](https://www.formula1.com/).
+- The Formula 1 car images are taken from the [Formula 1 Official Site](https://www.formula1.com/).
 
 ### Acknowledgements
 
