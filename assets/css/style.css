@@ -88,6 +88,22 @@ body {
     width: auto;
 }
 
+.overlay-text {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.overlay-text.visible {
+    display: flex;
+}
+
 @media (max-width: 500px) {
     .game-container {
         grid-template-columns: repeat(1, auto);
