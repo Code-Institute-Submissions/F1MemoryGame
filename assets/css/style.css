@@ -22,7 +22,15 @@ body {
     height: 175px;
     width: 110px;
     background-color: #fff;
+    border: 2px solid #000;
     border-radius: 0.5rem;
+}
+
+.card-back:hover {
+    height: 175px;
+    width: 110px;
+    border-radius: 0.5rem;
+    background: linear-gradient(-45deg, #b2a9e5 15%, #2b94e5 100%);
 }
 
 .info-container {
