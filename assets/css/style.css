@@ -6,6 +6,11 @@ body {
     background: url("../images/background-image.jpg") repeat;
 }
 
+span {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
 .title {
     text-align: center;
     color: #fff;
@@ -101,8 +106,13 @@ body {
     z-index: 1;
 }
 
+.overlay-text-small {
+    font-size: 40px;  
+}
+
 .overlay-text.visible {
     display: flex;
+    flex-direction: column;
     animation: on-load 500ms forwards;
 }
 
@@ -113,7 +123,7 @@ body {
     }
     to {
         background-color: rgba(0, 0, 0, .8);
-        font-size: 50px;
+        font-size: 75px;
     }
 }
 
