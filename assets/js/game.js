@@ -41,6 +41,7 @@ class MemoryGame {
         this.timeRemaining = this.totalTime;
         this.matchedCards = [];
         this.busy = true;
+        this.playBackgroundMusic();
         setTimeout(() => {
             this.shuffleCards(this.cardArray);
             this.busy = false;
@@ -125,5 +126,12 @@ class MemoryGame {
             this.cardMisMatch(card, this.cardToCheck);
 
         this.cardToCheck = null;
+    }
+
+    playBackgroundMusic() {
+        this.bgMusic = new Audio('assets/audio/F1_theme-8-bit_version.mp3')
+        this.bgMusic.play();
+        this.bgMusic.volume = 0.5;
+        this.bgMusic.loop = true;
     }
 }
