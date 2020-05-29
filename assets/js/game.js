@@ -54,4 +54,12 @@ class MemoryGame {
             card.classList.add('visible');
         }
     }
+
+    shuffleCards(cardArray) {
+        for (let i = cardArray.length - 1; i > 0; i--) {
+            let randIndex = Math.floor(Math.random() * (i + 1));
+            cardArray[randIndex].style.order = i;
+            cardArray[i].style.order = randIndex;
+        }
+    }
 }
