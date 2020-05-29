@@ -51,6 +51,7 @@ class MemoryGame {
         if(this.canFlipCard(card)) {
             this.totalClicks++;
             this.moveTicker.innerText = this.totalClicks;
+            card.classList.add('visible');
         }
     }
 }
