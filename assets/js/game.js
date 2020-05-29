@@ -6,7 +6,7 @@ $(document).ready(function () {
     overlay.forEach(overlay => {
         overlay.addEventListener('click', () => {
             overlay.classList.remove('visible');
-            game.startGame
+            game.startGame();
         });
     });
 
