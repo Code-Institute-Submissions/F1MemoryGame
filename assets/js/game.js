@@ -1,7 +1,7 @@
 $(document).ready(function () {
     let overlay = Array.from(document.getElementsByClassName('overlay-text'));
     let cards = Array.from(document.getElementsByClassName('card'));
-    let game = new MemoryGame(1000, cards);
+    let game = new MemoryGame(100, cards);
 
     overlay.forEach(overlay => {
         overlay.addEventListener('click', () => {
