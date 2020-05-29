@@ -40,6 +40,10 @@ class MemoryGame {
         this.timeRemaining = this.totalTime;
         this.matchedCards = [];
         this.busy = true;
+        setTimeout(() => {
+            this.shuffleCards();
+            this.busy = false;
+        }, 500);
     }
 
     canFlipCard(card) {
