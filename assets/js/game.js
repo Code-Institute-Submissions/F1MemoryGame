@@ -82,4 +82,9 @@ class MemoryGame {
                 this.gameOver();
         }, 1000);
     }
+
+    gameOver() {
+        clearInterval(this.countDown);
+        document.getElementById('game-over').classList.add('visible')
+    }
 }
