@@ -112,4 +112,13 @@ class MemoryGame {
             this.busy = flase;
         }, 1000);
     }
+
+    checkForCardMatch(card) {
+        if(this.getCardType(card) === this.getCardType(this.cardToCheck))
+            this.cardMatch(card, this.cardToCheck);
+        else
+            this.cardMisMatch(card, thus.cardToCheck);
+        
+        this.cardToCheck = null;
+    }
 }
