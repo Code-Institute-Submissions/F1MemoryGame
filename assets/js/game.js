@@ -121,7 +121,7 @@ class MemoryGame {
         if (this.getCardType(card) === this.getCardType(this.cardToCheck))
             this.cardMatch(card, this.cardToCheck);
         else
-            this.cardMisMatch(card, thus.cardToCheck);
+            this.cardMisMatch(card, this.cardToCheck);
 
         this.cardToCheck = null;
     }
