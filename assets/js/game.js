@@ -27,4 +27,8 @@ class MemoryGame {
         this.matchedCards = [];
         this.busy = true;
     }
+    
+    canFlipCard(card) {
+        return !this.busy && !this.matchedCards.includes(card) && card !== this.cardToCheck;
+    }
 }
