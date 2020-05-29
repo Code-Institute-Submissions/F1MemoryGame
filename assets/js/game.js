@@ -108,12 +108,12 @@ class MemoryGame {
             this.victory();
     }
 
-    cardMisMatch(card) {
+    cardMisMatch(card1, card2) {
         this.busy = true;
         setTimeout(() => {
             card1.classList.remove('visible');
             card2.classList.remove('visible');
-            this.busy = flase;
+            this.busy = false;
         }, 1000);
     }
 
