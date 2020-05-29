@@ -27,8 +27,15 @@ class MemoryGame {
         this.matchedCards = [];
         this.busy = true;
     }
-    
+
     canFlipCard(card) {
         return !this.busy && !this.matchedCards.includes(card) && card !== this.cardToCheck;
+    }
+
+    flipCard(card) {
+        if(this.canFlipCard(card)) {
+            this.totalClicks++;
+            this.moveTicker.innerText = this.totalClicks;
+        }
     }
 }
