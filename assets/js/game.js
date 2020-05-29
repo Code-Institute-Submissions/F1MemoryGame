@@ -66,4 +66,10 @@ class MemoryGame {
             cardArray[i].style.order = randIndex;
         }
     }
+
+    hideCards() {
+        this.cardArray.forEach(card => {
+            card.classList.remove('visible');
+        });
+    }
 }
