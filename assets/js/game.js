@@ -103,4 +103,13 @@ class MemoryGame {
         if(this.matchedCards.length === this.cardArray)
             this.victory();
     }
+
+    cardMisMatch(card) {
+        this.busy = true;
+        setTimeout(() => {
+            card1.classList.remove('visible');
+            card2.classList.remove('visible');
+            this.busy = flase;
+        }, 1000);
+    }
 }
