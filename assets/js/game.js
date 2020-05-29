@@ -96,4 +96,11 @@ class MemoryGame {
     getCardType(card) {
         return card.getElementsByClassName('f1-car')[0].src;
     }
+
+    cardMatch(card1, card2) {
+        this.matchedCards.push(card1);
+        this.matchedCards.push(card2);
+        if(this.matchedCards.length === this.cardArray)
+            this.victory();
+    }
 }
