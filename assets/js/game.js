@@ -43,6 +43,7 @@ class MemoryGame {
         setTimeout(() => {
             this.shuffleCards();
             this.busy = false;
+            this.countDown = this.startCountDown();
         }, 500);
     }
 
@@ -71,5 +72,14 @@ class MemoryGame {
         this.cardArray.forEach(card => {
             card.classList.remove('visible');
         });
+    }
+
+    startCountDown() {
+        return setInterval(() => {
+            this.timeRemaining--;
+            this.time.innerText = this.timeRemaining;
+            if(this.timeRemaining === 0)
+                this.gameOver();
+        }, 1000);
     }
 }
