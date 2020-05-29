@@ -41,7 +41,7 @@ class MemoryGame {
         this.matchedCards = [];
         this.busy = true;
         setTimeout(() => {
-            this.shuffleCards();
+            this.shuffleCards(this.cardArray);
             this.busy = false;
             this.countDown = this.startCountDown();
         }, 500);
