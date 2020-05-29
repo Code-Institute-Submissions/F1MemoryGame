@@ -20,7 +20,7 @@ $(document).ready(function () {
     $("#how-to-play").click(function () {
         $("#instructions").slideToggle("slow");
     });
-    $('#restart').click(function() {
+    $('#restart, #restart').click(function() {
         location.reload();
     });
 });
