@@ -104,7 +104,7 @@ class MemoryGame {
     cardMatch(card1, card2) {
         this.matchedCards.push(card1);
         this.matchedCards.push(card2);
-        if (this.matchedCards.length === this.cardArray)
+        if (this.matchedCards.length === this.cardArray.length)
             this.victory();
     }
 
