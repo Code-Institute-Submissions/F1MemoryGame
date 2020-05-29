@@ -29,9 +29,9 @@ class MemoryGame {
         this.cardArray = cards;
         this.totalTime = totalTime;
         this.timeRemaining = totalTime;
-        this.time = $("span").get('#time-remaining'); 
-        this.totalScore = $("span").get('#score');
-        this.moveTicker = $("span").get('#moves'); 
+        this.time = document.getElementById('time-remaining'); 
+        this.totalScore = document.getElementById('score'); 
+        this.moveTicker = document.getElementById('moves'); 
     }
 
     startGame() {
