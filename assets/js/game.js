@@ -77,6 +77,7 @@ class MemoryGame {
     hideCards() {
         this.cardArray.forEach(card => {
             card.classList.remove('visible');
+            card.classList.remove('matched');
         });
     }
 
@@ -106,6 +107,8 @@ class MemoryGame {
     cardMatch(card1, card2) {
         this.matchedCards.push(card1);
         this.matchedCards.push(card2);
+        card1.classList.add('matched');
+        card2.classList.add('matched');
         if (this.matchedCards.length === this.cardArray.length)
             this.victory();
     }
