@@ -87,4 +87,9 @@ class MemoryGame {
         clearInterval(this.countDown);
         document.getElementById('game-over').classList.add('visible')
     }
+
+    victory() {
+        clearInterval(this.countDown);
+        document.getElementById('victory').classList.add('visible')
+    }
 }
