@@ -3,11 +3,9 @@ $(document).ready(function () {
     let cards = Array.from(document.getElementsByClassName('card'));
     let game = new MemoryGame(100, cards);
 
-    overlay.forEach(overlay => {
-        overlay.addEventListener('click', () => {
-            overlay.classList.remove('visible');
-            game.startGame();
-        });
+    $('#start').click(function () {
+        $(this).parent().removeClass('visible');
+        game.startGame();
     });
 
     cards.forEach(card => {
