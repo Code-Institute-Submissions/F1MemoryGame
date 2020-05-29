@@ -1,7 +1,21 @@
 $(document).ready(function () {
-    $('#start').click(function () {
-        $(this).parent().removeClass('visible');
+    let overlay = Array.from(document.getElementsByClassName('overlay-text'));
+    let cards = Array.from(document.getElementsByClassName('card'));
+    let game = new MemoryGame(1000, cards);
+    
+    overlay.forEach(overlay => {
+        overlay.addEventListener('click', () => {
+            overlay.classList.remove('visible');
+            game.startGame
+        });
     });
+
+    cards.forEach(card => {
+        card.addEventListener('click', () => {
+            game.flipCard(card);
+        });
+    });
+
     $("#your-scores").click(function(){
         $("#saved-scores").slideToggle("slow");
     });
