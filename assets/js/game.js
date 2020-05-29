@@ -19,4 +19,12 @@ class MemoryGame {
         this.totalScore = $("span").get('#score');
         this.moveTicker = $("span").get('#moves'); 
     }
+
+    startGame() {
+        this.cardToCheck = null;
+        this.totalClicks = 0;
+        this.timeRemaining = this.totalTime;
+        this.matchedCards = [];
+        this.busy = true;
+    }
 }
