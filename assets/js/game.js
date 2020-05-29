@@ -92,4 +92,8 @@ class MemoryGame {
         clearInterval(this.countDown);
         document.getElementById('victory').classList.add('visible')
     }
+    
+    getCardType(card) {
+        return card.getElementsByClassName('f1-car')[0].src;
+    }
 }
