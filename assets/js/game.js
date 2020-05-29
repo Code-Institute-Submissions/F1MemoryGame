@@ -22,6 +22,9 @@ $(document).ready(function () {
     $("#how-to-play").click(function () {
         $("#instructions").slideToggle("slow");
     });
+    $('#restart').click(function() {
+        location.reload();
+    });
 });
 
 class MemoryGame {
