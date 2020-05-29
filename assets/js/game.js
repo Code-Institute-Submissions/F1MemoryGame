@@ -9,3 +9,14 @@ $(document).ready(function () {
         $("#instructions").slideToggle("slow");
     });
 });
+
+class MemoryGame {
+    constructor(totalTime, cards) {
+        this.cardArray = cards;
+        this.totalTime = totalTime;
+        this.timeRemaining = totalTime;
+        this.time = $("span").get('#time-remaining'); 
+        this.totalScore = $("span").get('#score');
+        this.moveTicker = $("span").get('#moves'); 
+    }
+}
