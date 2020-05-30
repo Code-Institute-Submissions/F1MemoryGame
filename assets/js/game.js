@@ -1,5 +1,4 @@
 $(document).ready(function () {
-    let overlay = Array.from(document.getElementsByClassName('overlay-text'));
     let cards = Array.from(document.getElementsByClassName('card'));
     let game = new MemoryGame(100, cards);
 
@@ -140,27 +139,27 @@ class MemoryGame {
 
     calculateScore() {
         if (this.timeRemaining >= '90') {
-            $("#score").each(function (idx, elem) {
+            $("#score, #score").each(function (idx, elem) {
                 $(this).text(parseInt($(this).text(), 10) + 100);
             });
         } else if (this.timeRemaining >= '80') {
-            $("#score").each(function (idx, elem) {
+            $("#score, #score").each(function (idx, elem) {
                 $(this).text(parseInt($(this).text(), 10) + 90);
             });
         } else if (this.timeRemaining >= '70') {
-            $("#score").each(function (idx, elem) {
+            $("#score, #score").each(function (idx, elem) {
                 $(this).text(parseInt($(this).text(), 10) + 80);
             });
         } else if (this.timeRemaining >= '60') {
-            $("#score").each(function (idx, elem) {
+            $("#score, #score").each(function (idx, elem) {
                 $(this).text(parseInt($(this).text(), 10) + 70);
             });
         } else if (this.timeRemaining >= '50') {
-            $("#score").each(function (idx, elem) {
+            $("#score, #score").each(function (idx, elem) {
                 $(this).text(parseInt($(this).text(), 10) + 60);
             });
         } else if (this.timeRemaining >= '0') {
-            $("#score").each(function (idx, elem) {
+            $("#score, #score").each(function (idx, elem) {
                 $(this).text(parseInt($(this).text(), 10) + 50);
             });
         }
