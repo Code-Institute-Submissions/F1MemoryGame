@@ -31,7 +31,6 @@ class MemoryGame {
         this.totalTime = totalTime;
         this.timeRemaining = totalTime;
         this.time = document.getElementById('time-remaining');
-        this.totalScore = document.getElementById('score');
         this.moveTicker = document.getElementById('moves');
     }
 
@@ -109,6 +108,31 @@ class MemoryGame {
         this.matchedCards.push(card2);
         card1.classList.add('matched');
         card2.classList.add('matched');
+        if (this.timeRemaining >= '90') {
+            $("#score").each(function(idx,elem){
+                $(this).text( parseInt($(this).text(),10) +100 );
+            });
+        } else if (this.timeRemaining >= '80') {
+            $("#score").each(function(idx,elem){
+                $(this).text( parseInt($(this).text(),10) +90 );
+            });
+        } else if (this.timeRemaining >= '70') {
+            $("#score").each(function(idx,elem){
+                $(this).text( parseInt($(this).text(),10) +80 );
+            });
+        } else if (this.timeRemaining >= '60') {
+            $("#score").each(function(idx,elem){
+                $(this).text( parseInt($(this).text(),10) +70 );
+            });
+        } else if (this.timeRemaining >= '50') {
+            $("#score").each(function(idx,elem){
+                $(this).text( parseInt($(this).text(),10) +60 );
+            });
+        } else if (this.timeRemaining >= '0') {
+            $("#score").each(function(idx,elem){
+                $(this).text( parseInt($(this).text(),10) +50 );
+            });
+        }
         if (this.matchedCards.length === this.cardArray.length)
             this.victory();
     }
