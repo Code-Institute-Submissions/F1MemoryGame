@@ -224,3 +224,9 @@ body {
         text-align: center;
     }
 }
+
+@media (max-height: 710px) {
+    .scroll {
+        overflow-y: scroll
+    }
+}
