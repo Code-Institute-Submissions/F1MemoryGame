@@ -124,10 +124,21 @@ body {
 }
 
 #saved-scores,
-#instructions {
+#instructions,
+#contact-form {
     display: none;
     text-align: center;
     font-size: 26px;
+}
+
+/*------Contact Form-*/
+.form {
+    font-size: 26px;
+}
+
+.btn-contact {
+    font-size: 20px;
+    font-family: 'Racing Sans One', sans-serif;
 }
 
 /*------Footer Styling-*/
@@ -209,7 +220,7 @@ body {
 
 /*------Overlay Mobile-*/
 @media (max-width: 675px) {
-    .overlay-text{
+    .overlay-text {
         text-align: center;
     }
 }
