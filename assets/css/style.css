@@ -114,8 +114,7 @@ body {
 
 .overlay-text-small div {
     font-size: 40px;
-    padding-left: 50px;
-    padding-right: 50px;
+    text-align: center;
 }
 
 .overlay-text.visible {
@@ -128,6 +127,7 @@ body {
 #instructions {
     display: none;
     text-align: center;
+    font-size: 26px;
 }
 
 /*------Footer Styling-*/
