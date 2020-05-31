@@ -45,6 +45,14 @@ I expect that the majority of the users will fall into the following criteria:
 
 [Here](https://github.com/filleben/F1MemoryGame/tree/master/wireframes) are the designs I made for the site.
 
+The wireframes were made using [Balsamiq](https://balsamiq.cloud)
+
+### Design Choices
+
+- **Font**: I wanted to use a single font throughout the site, it needed to look "racey" to fit in with the Formula 1 theme, with this in mind I decided to use [Racing Sans One](https://fonts.google.com/specimen/Racing+Sans+One) from [Google Fonts](https://fonts.google.com/).
+
+- **Colours**: I decided to use a Formula 1 photo as my background, because of this I kept a consistent font color of white (Hex: '#ffffff' RGB: 'rgb(255, 255, 255)') as it stands out the best from the background. The cards needed to be highlighted when you are hovering over them so I chose a to use a liner gradient of these two colours: Hex: '#b2a9e5', RGB: 'rgb(178,169,229)' and Hex: '#2b94e5', RGB: '(43,148,229)'. Lastly I chose a simple green colour (Hex: '#16A353' RGB:'rgb(22,163,83)') to highlight when two cards were matched.
+
 <span id="deployment"></span>
 
 ## Deployment
