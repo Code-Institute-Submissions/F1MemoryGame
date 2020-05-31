@@ -45,7 +45,9 @@ I expect that the majority of the users will fall into the following criteria:
 
 ### Content
 
-
+- I coded the base game javascript by following [this tutortial](https://www.youtube.com/watch?v=3uuQ3g92oPQ) by [PortEXE](https://www.portexe.com/)
+- I got my scoring working by using code from [Stack Overflow](https://stackoverflow.com/questions/6507216/javascript-addition-add-10-to-an-interger)
+- The game uses the [Fisher-Yates shuffle](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle) to shuffle the cards.
 
 ### Media
 
