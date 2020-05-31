@@ -29,9 +29,9 @@ This project is designed for Formula One fans like myself with the goal of provi
 
 I expect that the majority of the users will fall into the following criteria:
 
-- Be a Forumula One Fan
-- A user looking for a time waster
-- A user looking for a challenging memory challenge
+- Be a Forumula One Fan.
+- A user looking for a time waster.
+- A user looking for a challenging memory game.
 
 ### User Stories
 
@@ -40,6 +40,10 @@ I expect that the majority of the users will fall into the following criteria:
 - As a user, I want to be able to see how well I am playing the game (Score).
 - As a user, I want instructions on how to play the game.
 - As a user, I want to have fun!.
+
+### Wireframes
+
+[Here](https://github.com/filleben/F1MemoryGame/tree/master/wireframes) are the designs I made for the site.
 
 <span id="deployment"></span>
 
@@ -74,7 +78,7 @@ Further reading and troubleshooting on cloning a repository from GitHub can be f
 
 ### Content
 
-- I coded the base game javascript by following [this tutortial](https://www.youtube.com/watch?v=3uuQ3g92oPQ) by [PortEXE](https://www.portexe.com/)
+- I achieved base game functionality by following [this tutorial](https://www.youtube.com/watch?v=3uuQ3g92oPQ) by [PortEXE](https://www.portexe.com/)
 - I got my scoring working by using code from [Stack Overflow](https://stackoverflow.com/questions/6507216/javascript-addition-add-10-to-an-interger)
 - The game uses the [Fisher-Yates shuffle](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle) to shuffle the cards.
 
