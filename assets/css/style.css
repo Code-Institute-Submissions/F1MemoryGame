@@ -130,6 +130,12 @@ body {
     text-align: center;
 }
 
+/*------Footer Styling-*/
+.footer-text {
+    text-align: center;
+    color: #000000;
+}
+
 /*------Overlay Animation-*/
 @keyframes on-load {
     from {
