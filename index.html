@@ -6,6 +6,12 @@
     <title>F1 Memory Game</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_S0TdchUIrQ8Jf7LRVtCS2");
+        })();
+    </script>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -30,25 +36,25 @@
             <div id="contact">Contact Me</div>
             <div id="contact-form">
                 <p>Found a bug in the game?<br>Let me know!</p>
-                <form>
+                <form onsubmit="return sendMail(this);">
                     <div>
                         <label for="name" class="form">Name:<br></label>
-                        <input type="Text" class="form-control" id="name" aria-describedby="name" required />
+                        <input type="Text" name="name" class="form-control" id="name" aria-describedby="name"
+                            required />
                     </div>
                     <div>
                         <label for="email" class="form">Email Address:<br></label>
-                        <input type="email" class="form-control" id="email" aria-describedby="email" required />
+                        <input type="email" name="emailaddress" class="form-control" id="email" aria-describedby="email"
+                            required />
                     </div>
                     <div class="form">
                         <label for="text" class="form">What Went Wrong?<br></label>
-                        <textarea class="form-control" id="text" rows="3" required></textarea>
+                        <textarea name="bugreport" class="form-control" id="text" rows="3" required></textarea>
                     </div>
-                    <div class="form">
-                        <div class="col">
-                            <button type="submit" class="btn-contact">
-                                Send Message
-                            </button>
-                        </div>
+                    <div>
+                        <button type="submit" class="btn-contact">
+                            Send Message
+                        </button>
                     </div>
                 </form>
             </div>
@@ -251,6 +257,7 @@
         &copy; Ben Fillery 2020
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="assets/js/email.js"></script>
     <script src="assets/js/game.js"></script>
 </body>
 
