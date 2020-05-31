@@ -1,6 +1,6 @@
 # F1 Memory Game
 
-![Site Preview](assets/images/...)
+![Site Preview](assets/images/F1MemoryGame-preview.png)
 ---
 
 ## [Project Repository](https://github.com/filleben/F1MemoryGame)
