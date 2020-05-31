@@ -19,12 +19,18 @@ $(document).ready(function () {
     //Information about the game on the landing overlay
     $("#your-scores").click(function () {
         $("#saved-scores").slideToggle("slow");
+        $("#instructions").slideUp("slow");
+        $("#contact-form").slideUp("slow");
     });
     $("#how-to-play").click(function () {
         $("#instructions").slideToggle("slow");
+        $("#saved-scores").slideUp("slow");
+        $("#contact-form").slideUp("slow");
     });
     $("#contact").click(function () {
         $("#contact-form").slideToggle("slow");
+        $("#saved-scores").slideUp("slow");
+        $("#instructions").slideUp("slow");
     });
     //Restarts the game by reloading the page when 'Restart' is clicked on game over and victory overlay
     $('#restart, #restart').click(function () {
