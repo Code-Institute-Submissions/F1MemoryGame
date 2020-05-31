@@ -141,6 +141,19 @@ body {
     font-family: 'Racing Sans One', sans-serif;
 }
 
+/*-----Contact Form Response Messages-*/
+#success,
+#failed {
+    display: none;
+}
+
+#success.visible,
+#failed.visible {
+    display: flex;
+    text-align: center;
+    font-size: 26px;
+}
+
 /*------Footer Styling-*/
 .footer-text {
     text-align: center;
