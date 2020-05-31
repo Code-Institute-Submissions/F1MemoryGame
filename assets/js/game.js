@@ -99,12 +99,12 @@ class MemoryGame {
     //Game Over Function called when you lose
     gameOver() {
         clearInterval(this.countDown);
-        document.getElementById('game-over').classList.add('visible')
+        $('#game-over').addClass('visible')
     }
     //Victory Function called when you beat the game
     victory() {
         clearInterval(this.countDown);
-        document.getElementById('victory').classList.add('visible')
+        $('#victory').addClass('visible')
     }
     //Returns the value of the card i.e. what car you clicked
     getCardType(card) {
