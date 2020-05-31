@@ -1,11 +1,13 @@
 # F1 Memory Game
 
 ![Site Preview](assets/images/F1MemoryGame-preview.png)
+
 ---
 
 ## [Project Repository](https://github.com/filleben/F1MemoryGame)
 
 ## [Deployed Site](https://filleben.github.io/F1MemoryGame)
+
 ---
 
 This project is designed for Formula One fans like myself with the goal of providing a simple yet challenging memory game with a user friendly design, the game will always lay out the cards differently aswell as providing a user score, giving the users a reason to comeback to the site and keep playing multiple games.
@@ -38,6 +40,33 @@ I expect that the majority of the users will fall into the following criteria:
 - As a user, I want to be able to see how well I am playing the game (Score).
 - As a user, I want instructions on how to play the game.
 - As a user, I want to have fun!.
+
+<span id="deployment"></span>
+
+## Deployment
+
+To deploy this page to GitHub Pages from its [GitHub repository](https://github.com/filleben/TenburyWellsRFC), the following steps were taken: 
+
+1. From the menu items near the top of the page, select **Settings**.
+2. Scroll down to the **GitHub Pages** section.
+3. Under **Source** click the drop-down menu labelled **None** and select **Master Branch**
+4. On selecting Master Branch the page is automatically refreshed, the website is now deployed. 
+5. Scroll back down to the **GitHub Pages** section to retrieve the link to the deployed website.
+
+ 
+To clone this project from GitHub:
+
+1. Under the repository name, click "Clone or download".
+2. In the Clone with HTTPs section, copy the clone URL for the repository. 
+3. Open your IDE of choice.
+4. Change the current working directory to the location where you want the cloned directory to be made.
+5. Type `` `git clone` ``, and then paste the URL you copied in Step 3.
+
+``` console git clone https://github.com/filleben/```
+
+6. Press Enter. Your local clone will be created.
+
+Further reading and troubleshooting on cloning a repository from GitHub can be found [here](https://help.github.com/en/articles/cloning-a-repository).
 
 <span id="credits"></span>
 
