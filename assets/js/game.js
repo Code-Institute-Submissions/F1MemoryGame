@@ -23,6 +23,9 @@ $(document).ready(function () {
     $("#how-to-play").click(function () {
         $("#instructions").slideToggle("slow");
     });
+    $("#contact").click(function () {
+        $("#contact-form").slideToggle("slow");
+    });
     //Restarts the game by reloading the page when 'Restart' is clicked on game over and victory overlay
     $('#restart, #restart').click(function () {
         location.reload();
