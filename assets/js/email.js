@@ -7,10 +7,12 @@ function sendMail(contactForm) {
   })
   .then(
     function(response) {
-        console.log("SUCCESS", response);
+        $("#contact-form").slideUp("slow")
+        $('#success').addClass('visible')
     },
     function(error) {
-        console.log("FAILED", error);
+        $("#contact-form").slideUp("slow")
+        $('#failed').addClass('visible')
     }
 );
 return false;
