@@ -148,27 +148,27 @@ class MemoryGame {
     //Calculates score, score for each match is dependent on how quickly the match happens, the quicker the match the higher the score
     calculateScore() {
         if (this.timeRemaining >= '90') {
-            $("#live-score, #victory-score").each(function (idx, elem) {
+            $("#live-score, #victory-score").each(function () {
                 $(this).text(parseInt($(this).text(), 10) + 100);
             });
         } else if (this.timeRemaining >= '80') {
-            $("#live-score, #victory-score").each(function (idx, elem) {
+            $("#live-score, #victory-score").each(function () {
                 $(this).text(parseInt($(this).text(), 10) + 90);
             });
         } else if (this.timeRemaining >= '70') {
-            $("#live-score, #victory-score").each(function (idx, elem) {
+            $("#live-score, #victory-score").each(function () {
                 $(this).text(parseInt($(this).text(), 10) + 80);
             });
         } else if (this.timeRemaining >= '60') {
-            $("#live-score, #victory-score").each(function (idx, elem) {
+            $("#live-score, #victory-score").each(function () {
                 $(this).text(parseInt($(this).text(), 10) + 70);
             });
         } else if (this.timeRemaining >= '50') {
-            $("#live-score, #victory-score").each(function (idx, elem) {
+            $("#live-score, #victory-score").each(function () {
                 $(this).text(parseInt($(this).text(), 10) + 60);
             });
         } else if (this.timeRemaining >= '0') {
-            $("#live-score, #victory-score").each(function (idx, elem) {
+            $("#live-score, #victory-score").each(function () {
                 $(this).text(parseInt($(this).text(), 10) + 50);
             });
         }
