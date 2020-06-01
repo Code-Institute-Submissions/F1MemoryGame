@@ -33,7 +33,7 @@ $(document).ready(function () {
         $("#instructions").slideUp("slow");
     });
     //Restarts the game by reloading the page when 'Restart' is clicked on game over and victory overlay
-    $('#restart, #restart').click(function () {
+    $('#game-over-restart, #victory-restart').click(function () {
         location.reload();
     });
 });
@@ -148,27 +148,27 @@ class MemoryGame {
     //Calculates score, score for each match is dependent on how quickly the match happens, the quicker the match the higher the score
     calculateScore() {
         if (this.timeRemaining >= '90') {
-            $("#score, #score").each(function (idx, elem) {
+            $("#live-score, #victory-score").each(function (idx, elem) {
                 $(this).text(parseInt($(this).text(), 10) + 100);
             });
         } else if (this.timeRemaining >= '80') {
-            $("#score, #score").each(function (idx, elem) {
+            $("#live-score, #victory-score").each(function (idx, elem) {
                 $(this).text(parseInt($(this).text(), 10) + 90);
             });
         } else if (this.timeRemaining >= '70') {
-            $("#score, #score").each(function (idx, elem) {
+            $("#live-score, #victory-score").each(function (idx, elem) {
                 $(this).text(parseInt($(this).text(), 10) + 80);
             });
         } else if (this.timeRemaining >= '60') {
-            $("#score, #score").each(function (idx, elem) {
+            $("#live-score, #victory-score").each(function (idx, elem) {
                 $(this).text(parseInt($(this).text(), 10) + 70);
             });
         } else if (this.timeRemaining >= '50') {
-            $("#score, #score").each(function (idx, elem) {
+            $("#live-score, #victory-score").each(function (idx, elem) {
                 $(this).text(parseInt($(this).text(), 10) + 60);
             });
         } else if (this.timeRemaining >= '0') {
-            $("#score, #score").each(function (idx, elem) {
+            $("#live-score, #victory-score").each(function (idx, elem) {
                 $(this).text(parseInt($(this).text(), 10) + 50);
             });
         }
