@@ -152,6 +152,12 @@ I used the following web browsers on both desktop (Windows) and mobile (Android)
 - [Microsoft Edge](https://www.microsoft.com/en-us/edge)
   - Desktop Version: 44.18362.449.0
 
+The project was run through both [HTML Validation](https://validator.w3.org/) and [CSS Validation](https://jigsaw.w3.org/css-validator/validator) with no errors found.
+
+The project used **Jasmine** to test JavaScript Functions, the testing can be found [here.](...)
+
+HTML and CSS tests carried out have been documented and visualised [here](https://github.com/filleben/F1MemoryGame/tree/master/testing/site-testing.pdf)
+
 <span id="deployment"></span>
 
 ## Deployment
