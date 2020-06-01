@@ -53,6 +53,30 @@ The wireframes were made using [Balsamiq](https://balsamiq.cloud)
 
 - **Colours**: I decided to use a Formula 1 photo as my background, because of this I kept a consistent font color of white (Hex: '#ffffff' RGB: 'rgb(255, 255, 255)') as it stands out the best from the background. The cards needed to be highlighted when you are hovering over them so I chose a to use a liner gradient of these two colours: Hex: '#b2a9e5', RGB: 'rgb(178,169,229)' and Hex: '#2b94e5', RGB: '(43,148,229)'. Lastly I chose a simple green colour (Hex: '#16A353' RGB:'rgb(22,163,83)') to highlight when two cards were matched.
 
+<span id="features"></span>
+
+## Features
+
+- **Game Instructions**: Tells users how to play the game.
+- **Contact Form**: Allows users to contact me directly to report any bugs with the game.
+- **Success/Failed Messages**: Tells users if they successfully contacted me or not.
+- **Music**: 8-bit Formula 1 theme plays when you begin the game.
+- **Game Timer**: When the game starts a timer beginds counting down from 100, when it hits zero the game is over.
+- **Move Counter**: Counts how many moves a user makes while playing a round.
+- **Scoring System**: Users get points for each match they find, the quicker they find a match the more points they will recieve.
+- **Game Over Screen**: When the timer hits zero the game over screen will appear allowing the users to try again.
+- **Victory Screen**: When the user has found all 10 matches before the time runs out the Victory screen will appear showing their score and allowing them to play again.
+- **Screen Size Message**: If the user is using a device with a small screen a message will appear letting them know the game will be better in landscape orientation.
+- **Defense Function**: The game will not allow cards to be flipped if there is a card animation taking place.
+- **Defense Function**: The game will not allow a card to be flipped if it is part of a matched pair.
+- **Defense Function**: The game will allow the same card to be flipped back to hidden untill a second card has been selected to check for a match.
+
+## Features Left to Implement
+
+- Gobal leaderboard based on game scores.
+- Gobal leaderboard based on how fast users beat the game.
+- Different gamemode such as classic F1 cars and F1 tracks.
+
 <span id="deployment"></span>
 
 ## Deployment
