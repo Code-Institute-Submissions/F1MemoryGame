@@ -77,6 +77,37 @@ The wireframes were made using [Balsamiq](https://balsamiq.cloud)
 - Gobal leaderboard based on how fast users beat the game.
 - Different gamemode such as classic F1 cars and F1 tracks.
 
+<span id="technologies"></span>
+
+## Technologies Used
+
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
+  - The project uses **HTML5** to provide the content and structure.
+
+- [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+  - The project uses **CSS3** for styling.
+
+- [Google Fonts](https://fonts.google.com/)
+  - The project uses **Google Fonts** to provide the font used on the site.
+
+- [jQuery](https://jquery.com)
+  - The project uses **jQuery** for game functions.
+
+- [JavaScript](https://www.javascript.com/)
+  - The project uses **JavaScript** for game functions.
+
+- [EmailJS](https://www.emailjs.com/)
+  - The project uses **EmailJS** to send emails based on provided contact information.
+
+- [VSCode](https://code.visualstudio.com/)
+  - The project devloped in  **Visual Studio Code**.
+
+- [Git](https://git-scm.com/)
+  - The project uses **Git** for version control.
+
+- [GitHub](https://github.com/)
+  - The project uses **GitHub** to host the repository and for the live preview of the site.
+
 <span id="deployment"></span>
 
 ## Deployment
