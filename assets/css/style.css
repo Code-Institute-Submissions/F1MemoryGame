@@ -27,6 +27,10 @@ body {
     font-size: 25px;
 }
 
+.score {
+    text-align: center;
+}
+
 /*------ Screen Size Message-*/
 .screen-size {
     display: none;
