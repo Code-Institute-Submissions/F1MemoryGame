@@ -40,7 +40,9 @@ $(document).ready(function () {
 
 class MemoryGame {
     //Game Constructor
-    constructor(totalTime, cards) {
+    constructor(totalTime, cards, score) {
+        var score = 0;
+        this.score = score;
         this.cardArray = cards;
         this.totalTime = totalTime;
         this.timeRemaining = totalTime;
@@ -105,6 +107,8 @@ class MemoryGame {
     victory() {
         clearInterval(this.countDown);
         $('#victory').addClass('visible')
+        this.setHighScore();
+        document.getElementById('high-score').innerHtml = localStorage.highScore;
     }
     //Returns the value of the card i.e. what car you clicked
     getCardType(card) {
@@ -148,29 +152,45 @@ class MemoryGame {
     //Calculates score, score for each match is dependent on how quickly the match happens, the quicker the match the higher the score
     calculateScore() {
         if (this.timeRemaining >= '90') {
-            $("#live-score, #victory-score").each(function () {
+           $("#live-score, #victory-score").each(function () {
                 $(this).text(parseInt($(this).text(), 10) + 100);
             });
+            this.score += $(this) + 100;
+            console.log(this.score)
         } else if (this.timeRemaining >= '80') {
             $("#live-score, #victory-score").each(function () {
                 $(this).text(parseInt($(this).text(), 10) + 90);
             });
+            this.score += $(this) + 90;
+            console.log(this.score)
         } else if (this.timeRemaining >= '70') {
             $("#live-score, #victory-score").each(function () {
                 $(this).text(parseInt($(this).text(), 10) + 80);
             });
+            this.score += $(this) + 80;
+            console.log(this.score)
         } else if (this.timeRemaining >= '60') {
             $("#live-score, #victory-score").each(function () {
                 $(this).text(parseInt($(this).text(), 10) + 70);
             });
+            this.score += $(this) + 70;
+            console.log(this.score)
         } else if (this.timeRemaining >= '50') {
             $("#live-score, #victory-score").each(function () {
                 $(this).text(parseInt($(this).text(), 10) + 60);
             });
+            this.score += $(this) + 60;
+            console.log(this.score)
         } else if (this.timeRemaining >= '0') {
             $("#live-score, #victory-score").each(function () {
                 $(this).text(parseInt($(this).text(), 10) + 50);
             });
+            this.score += $(this) + 50;
+            console.log(this.score)
         }
     }
+
+    setHighScore() {
+        localStorage.highScore = this.score
+       }
 }
