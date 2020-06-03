@@ -154,7 +154,7 @@ I used the following web browsers on both desktop (Windows) and mobile (Android)
 
 The project was run through both [HTML Validation](https://validator.w3.org/) and [CSS Validation](https://jigsaw.w3.org/css-validator/validator) with no errors found.
 
-The project used **Jasmine** to test JavaScript Functions, the testing can be found [here.](...)
+I had orgininally planned to test my project with Jasmine testing, but with the way my project ended up it would require me to write extra code just to be able to test functions. With that in mind I did manual testing which can be seen [here](https://github.com/filleben/F1MemoryGame/tree/master/testing/function-testing.pdf)
 
 HTML and CSS tests carried out have been documented and visualised [here](https://github.com/filleben/F1MemoryGame/tree/master/testing/site-testing.pdf)
 
