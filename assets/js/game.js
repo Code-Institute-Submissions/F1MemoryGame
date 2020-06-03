@@ -1,6 +1,7 @@
 //While coding this I followed a tutorial to achieve basic game functionality, then built my own features on top of that code, see credits in ReadME
 
 $(document).ready(function () {
+    //Displays current high score
     document.getElementById('high-score').innerText = localStorage.highScore;
     //Create Array from all elements with the 'card' class
     let cards = Array.from(document.getElementsByClassName('card'));
@@ -151,6 +152,7 @@ class MemoryGame {
         this.bgMusic.loop = true;
     }
     //Calculates score, score for each match is dependent on how quickly the match happens, the quicker the match the higher the score
+    //Some code was sourced from Stack Overflow see ReadME
     calculateScore() {
         if (this.timeRemaining >= '90') {
            $("#live-score, #victory-score").each(function () {
@@ -184,7 +186,7 @@ class MemoryGame {
             this.score += 50;
         }
     }
-
+    //Sets the high score
     setHighScore() {
         if (this.score > localStorage.highScore)
             localStorage.highScore = this.score;
