@@ -1,6 +1,7 @@
 //While coding this I followed a tutorial to achieve basic game functionality, then built my own features on top of that code, see credits in ReadME
 
 $(document).ready(function () {
+    document.getElementById('high-score').innerText = localStorage.highScore;
     //Create Array from all elements with the 'card' class
     let cards = Array.from(document.getElementsByClassName('card'));
     //Calls the MemoryGame class and card array, sets the game timer
@@ -107,8 +108,8 @@ class MemoryGame {
     victory() {
         clearInterval(this.countDown);
         $('#victory').addClass('visible')
-        this.setHighScore();
-        document.getElementById('high-score').innerHtml = localStorage.highScore;
+        this.setHighScore()
+        document.getElementById('high-score').innerText = localStorage.highScore;
     }
     //Returns the value of the card i.e. what car you clicked
     getCardType(card) {
@@ -155,42 +156,37 @@ class MemoryGame {
            $("#live-score, #victory-score").each(function () {
                 $(this).text(parseInt($(this).text(), 10) + 100);
             });
-            this.score += $(this) + 100;
-            console.log(this.score)
+            this.score += 100;
         } else if (this.timeRemaining >= '80') {
             $("#live-score, #victory-score").each(function () {
                 $(this).text(parseInt($(this).text(), 10) + 90);
             });
-            this.score += $(this) + 90;
-            console.log(this.score)
+            this.score += 90;
         } else if (this.timeRemaining >= '70') {
             $("#live-score, #victory-score").each(function () {
                 $(this).text(parseInt($(this).text(), 10) + 80);
             });
-            this.score += $(this) + 80;
-            console.log(this.score)
+            this.score += 80;
         } else if (this.timeRemaining >= '60') {
             $("#live-score, #victory-score").each(function () {
                 $(this).text(parseInt($(this).text(), 10) + 70);
             });
-            this.score += $(this) + 70;
-            console.log(this.score)
+            this.score += 70;
         } else if (this.timeRemaining >= '50') {
             $("#live-score, #victory-score").each(function () {
                 $(this).text(parseInt($(this).text(), 10) + 60);
             });
-            this.score += $(this) + 60;
-            console.log(this.score)
+            this.score += 60;
         } else if (this.timeRemaining >= '0') {
             $("#live-score, #victory-score").each(function () {
                 $(this).text(parseInt($(this).text(), 10) + 50);
             });
-            this.score += $(this) + 50;
-            console.log(this.score)
+            this.score += 50;
         }
     }
 
     setHighScore() {
-        localStorage.highScore = this.score
+        if (this.score > localStorage.highScore)
+            localStorage.highScore = this.score;
        }
 }
