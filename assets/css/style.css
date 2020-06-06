@@ -1,10 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Racing+Sans+One:100,200,300,400,500,600,700&display=swap");
 
 /*------Font and Background Image Styling-*/
+/*------See ReadME for source of some styling-*/
 body {
     margin: 0;
     font-family: 'Racing Sans One', sans-serif;
-    background: url("../images/background-image.jpg") repeat;
+    background: url("../images/background-image.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 /*------Title Text Styling-*/
