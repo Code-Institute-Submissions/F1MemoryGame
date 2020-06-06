@@ -1,8 +1,13 @@
 //While coding this I followed a tutorial to achieve basic game functionality, then built my own features on top of that code, see credits in ReadME
 
 $(document).ready(function () {
-    //Displays current high score
-    document.getElementById('high-score').innerText = localStorage.highScore;
+    //Displays high score, displays 0 if high score isnt set
+    var highScore = localStorage.getItem("highScore");
+    if (highScore == null) {
+        document.getElementById('high-score').innerText = "0";
+    } else {
+        document.getElementById('high-score').innerText = localStorage.getItem("highScore");
+    }
     //Create Array from all elements with the 'card' class
     let cards = Array.from(document.getElementsByClassName('card'));
     //Calls the MemoryGame class and card array, sets the game timer
