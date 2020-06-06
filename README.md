@@ -64,6 +64,7 @@ The wireframes were made using [Balsamiq](https://balsamiq.cloud)
 - **Game Timer**: When the game starts a timer beginds counting down from 100, when it hits zero the game is over.
 - **Move Counter**: Counts how many moves a user makes while playing a round.
 - **Scoring System**: Users get points for each match they find, the quicker they find a match the more points they will recieve.
+- **High Score Saving**: The game will save the users highest score between sessions in local storage.
 - **Game Over Screen**: When the timer hits zero the game over screen will appear allowing the users to try again.
 - **Victory Screen**: When the user has found all 10 matches before the time runs out the Victory screen will appear showing their score and allowing them to play again.
 - **Screen Size Message**: If the user is using a device with a small screen a message will appear letting them know the game will be better in landscape orientation.
