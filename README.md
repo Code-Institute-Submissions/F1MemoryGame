@@ -155,9 +155,34 @@ I used the following web browsers on both desktop (Windows) and mobile (Android)
 
 The project was run through both [HTML Validation](https://validator.w3.org/) and [CSS Validation](https://jigsaw.w3.org/css-validator/validator) with no errors found.
 
-I had orgininally planned to test my project with Jasmine testing, but with the way my project ended up it would require me to write extra code just to be able to test functions. With that in mind I did manual testing which can be seen [here](https://github.com/filleben/F1MemoryGame/tree/master/testing/function-testing.pdf)
+I had orgininally planned to test my project with Jasmine testing, but with the way my project ended up it would require me to write extra code just to be able to test functions. With that in mind I did manual testing which can be seen [here](https://github.com/filleben/F1MemoryGame/tree/master/testing/js-testing.pdf)
 
 HTML and CSS tests carried out have been documented and visualised [here](https://github.com/filleben/F1MemoryGame/tree/master/testing/site-testing.pdf)
+
+### User Story Tests
+
+1. Site is simple and visually appealing:
+   - The feedback I have recieved so far indicate that this is true. It has been noted that on smaller devices the background image will repeat vertically.
+
+2. Cards are shuffled every game:
+  1. Click on "Click to Start", cards are shuffled.
+  2. Beat the game.
+  3. Click on "Restart", cards are shuffled.
+
+3. Game is Scored:
+  1. Click on "Click to Start".
+  2. Get a match in the game, Score increases.
+
+4. Instructions on how to play the game:
+  1. Click on "How to Play"
+  2. View instructions.
+
+### All tests performed with no errors found.
+
+### Issues Found During Testing
+
+- While testing on other browers other than FireFox which was used during site development, I released that the high score wasn't actually being saved, this issue was fixed by adding localStorage.setItem to my setHighScore() function.
+- If the game was being played for the first time the "High Score:" would display undefined untill it was set when you beat the game, this issue was fixed by adding a if statement inside the document ready function.
 
 <span id="deployment"></span>
 
