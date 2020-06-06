@@ -101,8 +101,11 @@ class MemoryGame {
     //Victory Function called when you beat the game
     victory() {
         clearInterval(this.countDown);
-        $('#victory').addClass('visible')
-        this.setHighScore()
+        $('#victory').addClass('visible');
+        if (this.score > localStorage.getItem("highScore")) {
+            this.setHighScore();
+        }
+
         document.getElementById('high-score').innerText = localStorage.highScore;
     }
     //Returns the value of the card i.e. what car you clicked
@@ -148,7 +151,7 @@ class MemoryGame {
     //Some code was sourced from Stack Overflow see ReadME
     calculateScore() {
         if (this.timeRemaining >= '90') {
-           $("#live-score, #victory-score").each(function () {
+            $("#live-score, #victory-score").each(function () {
                 $(this).text(parseInt($(this).text(), 10) + 100);
             });
             this.score += 100;
@@ -181,7 +184,6 @@ class MemoryGame {
     }
     //Sets the high score
     setHighScore() {
-        if (this.score > localStorage.highScore)
-            localStorage.highScore = this.score;
-       }
+        localStorage.setItem("highScore", this.score);
+    }
 }
