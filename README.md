@@ -162,7 +162,7 @@ HTML and CSS tests carried out have been documented and visualised [here](https:
 ### User Story Tests
 
 1. Site is simple and visually appealing:
-   - The feedback I have received so far indicates that this is true. It has been noted that on smaller devices the background image will repeat vertically.
+   - The feedback I have received so far indicates that this is true.
 
 2. Cards are shuffled every game:
   1. Click on "Click to Start", cards are shuffled.
@@ -181,6 +181,7 @@ HTML and CSS tests carried out have been documented and visualised [here](https:
 
 ### Issues Found During Testing
 
+- Background image repeated vertically on mobile devices, fixed by adding further styling options to the body.
 - While testing on other browsers other than Firefox which was used during site development, I released that the high score wasn't being saved, this issue was fixed by adding localStorage.setItem to my setHighScore() function.
 - If the game was being played for the first time the "High Score:" would display undefined until it was set when you beat the game, this issue was fixed by adding an if statement inside the document ready function.
 
@@ -221,6 +222,7 @@ Further reading and troubleshooting on cloning a repository from GitHub can be f
 - I achieved base game functionality by following [this tutorial](https://www.youtube.com/watch?v=3uuQ3g92oPQ) by [PortEXE](https://www.portexe.com/)
 - I got my scoring working by using code from [Stack Overflow](https://stackoverflow.com/questions/6507216/javascript-addition-add-10-to-an-interger)
 - The game uses the [Fisher-Yates shuffle](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle) to shuffle the cards.
+- I styled the background site image using code from [CSS Tricks](https://css-tricks.com/perfect-full-page-background-image/)
 
 ### Media
 
