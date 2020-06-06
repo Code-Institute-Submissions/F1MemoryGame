@@ -23,11 +23,12 @@ $(document).ready(function () {
             game.flipCard(card);
         });
     });
-    //Information about the game on the landing overlay
+    //Opens game instructions
     $("#how-to-play").click(function () {
         $("#instructions").slideToggle("slow");
         $("#contact-form").slideUp("slow");
     });
+    //Opens contact form
     $("#contact").click(function () {
         $("#contact-form").slideToggle("slow");
         $("#instructions").slideUp("slow");
@@ -49,7 +50,7 @@ class MemoryGame {
         this.time = document.getElementById('time-remaining');
         this.moveTicker = document.getElementById('moves');
     }
-    //Start Game Function
+    //Start Game Function wont let any cards be flipped for 0.5 secs
     startGame() {
         this.cardToCheck = null;
         this.totalClicks = 0;
