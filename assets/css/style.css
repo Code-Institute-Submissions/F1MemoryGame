@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Racing+Sans+One:100,200,300,400,500,600,700&display=swap");
 
 /*------Font and Background Image Styling-*/
-/*------See ReadME for source of some styling-*/
+/*------See ReadME for source of some body styling-*/
 body {
     margin: 0;
     font-family: 'Racing Sans One', sans-serif;
@@ -18,6 +18,19 @@ body {
     color: #fff;
     font-size: 50px;
     font-weight: normal;
+}
+
+/*------Audio Toggle Styling-*/
+.audio-toggle {
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+}
+
+.audio-toggle .audio-status {
+    text-decoration: underline;
+    font-weight: 900;
+    font-size: 24px;
 }
 
 /*------Game Information Styling-*/
