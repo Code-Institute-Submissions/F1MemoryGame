@@ -76,6 +76,13 @@ body {
     border-radius: 0.5rem;
 }
 
+.manufacturer {
+    position: absolute;
+    color: #000000;
+    padding-top: 5rem;
+    font-size: 1.25rem;
+}
+
 .card-back:hover {
     height: 6.875rem;
     width: 13.75rem;
