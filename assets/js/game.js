@@ -17,6 +17,17 @@ $(document).ready(function () {
         $(this).parent().removeClass('visible');
         game.startGame();
     });
+    //Toggle game difficulty
+    $('#game-hard').click(function () {
+        $(this).addClass("game-mode");
+        $('#game-easy').removeClass("game-mode");
+        $('.manufacturer').css("display", "none");
+    });
+    $('#game-easy').click(function () {
+        $(this).addClass("game-mode");
+        $('#game-hard').removeClass("game-mode");
+        $('.manufacturer').css("display", "flex");
+    });
     //Flips the cards on click
     cards.forEach(card => {
         card.addEventListener('click', () => {

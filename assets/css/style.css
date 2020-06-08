@@ -33,6 +33,17 @@ body {
     font-size: 1.5rem;
 }
 
+/*------Hard Mode Toggle Styling-*/
+.difficulty {
+    font-size: 2.2rem;
+}
+
+.game-mode {
+    text-decoration: underline;
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+
 /*------Game Information Styling-*/
 .info-container {
     grid-column: 1 / -1;
