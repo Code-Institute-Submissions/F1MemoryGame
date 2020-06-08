@@ -61,10 +61,15 @@ The wireframes were made using [Balsamiq](https://balsamiq.cloud)
 - **Contact Form**: Allows users to contact me directly to report any bugs with the game.
 - **Success/Failed Messages**: Tells users if they successfully contacted me or not.
 - **Music**: 8-bit Formula 1 theme plays when you begin the game.
-- **Music Toggle**: Music can be turned on and off as you play.
 - **Game Timer**: When the game starts a timer begins counting down from 100 when it hits zero the game is over.
 - **Move Counter**: Counts how many moves a user makes while playing.
 - **Scoring System**: Users get points for each match they find, the quicker they find a match the more points they will receive.
+    - Match in the first 10 seconds (100 to 90 seconds remaining) = 100 Points
+    - Match in the next 10 seconds (90 to 80 seconds remaining) = 90 Points
+    - Match in the next 10 seconds (80 to 70 seconds remaining) = 80 Points
+    - Match in the next 10 seconds (70 to 60 seconds remaining) = 70 Points
+    - Match in the next 10 seconds (60 to 50 seconds remaining) = 60 Points
+    - Match in the last 50 seconds (50 to 0 seconds remaining) = 50 Points
 - **High Score Saving**: The game will save the users highest score between sessions in local storage.
 - **Game Over Screen**: When the timer hits zero the game over screen will appear allowing the users to try again.
 - **Victory Screen**: When the user has found all 10 matches before the time runs out the Victory screen will appear showing their score and allowing them to play again.
@@ -72,6 +77,14 @@ The wireframes were made using [Balsamiq](https://balsamiq.cloud)
 - **Defense Function**: The game will not allow cards to be flipped if there is a card animation taking place.
 - **Defense Function**: The game will not allow a card to be flipped if it is part of a matched pair.
 - **Defense Function**: The game will allow the same card to be flipped back to hidden until a second card has been selected to check for a match.
+
+## Features Added After Feedback
+
+After gathering feedback on my project I added the following features:
+
+- **Music Toggle**: Music can be turned on and off as you play.
+- **Car Names**: The car manufacturer names will appear under the image of each card, makes the game more user friendly towards users unfimilar with Formula 1.
+- **Hard Mode**: This will remove the car manufacturer names from the cards, for the users who are familiar with Formula 1.
 
 ## Features Left to Implement
 
