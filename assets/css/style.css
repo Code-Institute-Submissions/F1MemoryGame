@@ -16,7 +16,7 @@ body {
 .title {
     text-align: center;
     color: #fff;
-    font-size: 50px;
+    font-size: 3.125rem;
     font-weight: normal;
 }
 
@@ -24,13 +24,13 @@ body {
 .audio-toggle {
     color: #fff;
     text-align: center;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .audio-toggle .audio-status {
     text-decoration: underline;
     font-weight: 900;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 /*------Game Information Styling-*/
@@ -42,7 +42,7 @@ body {
 
 .game-info {
     color: #fff;
-    font-size: 25px;
+    font-size: 1.5625rem;
 }
 
 .score {
@@ -52,7 +52,7 @@ body {
 /*------ Screen Size Message-*/
 .screen-size {
     display: none;
-    font-size: 20px;
+    font-size: 1.25rem;
     text-align: center;
 }
 
@@ -60,33 +60,33 @@ body {
 .game-container {
     display: grid;
     grid-template-columns: repeat(4, auto);
-    grid-gap: 20px;
+    grid-gap: 1.25rem;
     justify-content: center;
-    margin: 20px;
-    perspective: 500px;
+    margin: 1.25rem;
+    perspective: 31.25rem;
 }
 
 /*------Card Styling-*/
 .card {
     position: relative;
-    height: 110px;
-    width: 220px;
+    height: 6.875rem;
+    width: 13.75rem;
     background-color: #fff;
-    border: 2px solid #000;
+    border: 0.125rem solid #000;
     border-radius: 0.5rem;
 }
 
 .card-back:hover {
-    height: 110px;
-    width: 220px;
+    height: 6.875rem;
+    width: 13.75rem;
     border-radius: 0.5rem;
     background: linear-gradient(-45deg, #b2a9e5 15%, #2b94e5 100%);
 }
 
 .f1-logo {
     position: absolute;
-    height: 110px;
-    width: 220px;
+    height: 6.875rem;
+    width: 13.75rem;
 }
 
 .card-back:hover .f1-logo {
@@ -117,8 +117,8 @@ body {
 }
 
 .f1-car {
-    padding-top: 20px;
-    height: 61px;
+    padding-top: 1.25rem;
+    height: 3.8125rem;
     width: auto;
 }
 
@@ -142,7 +142,7 @@ body {
 }
 
 .overlay-text-small div {
-    font-size: 40px;
+    font-size: 2.5rem;
     text-align: center;
 }
 
@@ -157,16 +157,16 @@ body {
 #contact-form {
     display: none;
     text-align: center;
-    font-size: 26px;
+    font-size: 1.625rem;
 }
 
 /*------Contact Form-*/
 .form {
-    font-size: 26px;
+    font-size: 1.625rem;
 }
 
 .btn-contact {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-family: 'Racing Sans One', sans-serif;
 }
 
@@ -180,7 +180,7 @@ body {
 #failed.visible {
     display: flex;
     text-align: center;
-    font-size: 26px;
+    font-size: 1.625rem;
 }
 
 /*------Footer Styling-*/
@@ -193,12 +193,12 @@ body {
 @keyframes on-load {
     from {
         background-color: rgba(0, 0, 0, 0);
-        font-size: 0px;
+        font-size: 0rem;
     }
 
     to {
         background-color: rgba(0, 0, 0, .8);
-        font-size: 75px;
+        font-size: 4.6875rem;
     }
 }
 
