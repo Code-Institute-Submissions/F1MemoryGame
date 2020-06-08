@@ -28,6 +28,8 @@ $(document).ready(function () {
         $('#game-hard').removeClass("game-mode");
         $('.manufacturer').css("display", "flex");
     });
+    //Hard Mode explaination on hover
+    $("#game-hard").attr('title', 'Enabling this will remove the car manufacturer from each card.');
     //Flips the cards on click
     cards.forEach(card => {
         card.addEventListener('click', () => {
