@@ -190,7 +190,7 @@ HTML and CSS tests carried out have been documented and visualised [here](https:
 
 ## Deployment
 
-To deploy this page to GitHub Pages from its [GitHub repository](https://github.com/filleben/TenburyWellsRFC), the following steps were taken: 
+To deploy this page to GitHub Pages from its [GitHub repository](https://github.com/filleben/F1MemoryGame), the following steps were taken: 
 
 1. From the menu items near the top of the page, select **Settings**.
 2. Scroll down to the **GitHub Pages** section.
@@ -207,7 +207,7 @@ To clone this project from GitHub:
 4. Change the current working directory to the location where you want the cloned directory to be made.
 5. Type `` `git clone` ``, and then paste the URL you copied in Step 3.
 ```console
-git clone https://github.com/filleben/TenburyWellsRFC
+git clone https://github.com/filleben/F1MemoryGame
 ```
 
 6. Press Enter. Your local clone will be created.
