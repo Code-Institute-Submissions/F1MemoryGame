@@ -10,7 +10,7 @@
 
 ---
 
-This project is designed for Formula One fans like myself to provide a simple yet challenging memory game with a user-friendly design, the game will always lay out the cards differently as well as providing a user score, giving the users a reason to come back to the site and keep playing multiple games.
+This project is designed for Formula One fans like myself to provide a simple yet challenging memory game with a user-friendly design. The goal of the project is to create a game that is both fun and challenging for all Formula 1 fans whether they are new to the sport or a hardcore fan, to achieve this the game will shuffle the cards before each game, keep score and have a time limit.
 
 ## Table of Contents
 
@@ -73,7 +73,7 @@ The wireframes were made using [Balsamiq](https://balsamiq.cloud)
 - **High Score Saving**: The game will save the users highest score between sessions in local storage.
 - **Game Over Screen**: When the timer hits zero the game over screen will appear allowing the users to try again.
 - **Victory Screen**: When the user has found all 10 matches before the time runs out the Victory screen will appear showing their score and allowing them to play again.
-- **Screen Size Message**: If the user is using a device with a small screen a message will appear letting them know the game will be better in landscape orientation.
+- **Screen Size Message**: If the user is using a device with a small screen a message will appear letting them know the game will play better in landscape orientation.
 - **Defense Function**: The game will not allow cards to be flipped if there is a card animation taking place.
 - **Defense Function**: The game will not allow a card to be flipped if it is part of a matched pair.
 - **Defense Function**: The game will allow the same card to be flipped back to hidden until a second card has been selected to check for a match.
@@ -83,7 +83,7 @@ The wireframes were made using [Balsamiq](https://balsamiq.cloud)
 After gathering feedback on my project I added the following features:
 
 - **Music Toggle**: Music can be turned on and off as you play.
-- **Car Names**: The car manufacturer names will appear under the image of each card, makes the game more user friendly towards users unfimilar with Formula 1.
+- **Car Names**: The car manufacturer names will appear under the image of each card, makes the game more user friendly towards users unfamiliar with Formula 1.
 - **Hard Mode**: This will remove the car manufacturer names from the cards, for the users who are familiar with Formula 1.
 
 ## Features Left to Implement
@@ -167,7 +167,7 @@ I used the following web browsers on both desktop (Windows) and mobile (Android)
 - [Microsoft Edge](https://www.microsoft.com/en-us/edge)
   - Desktop Version: 44.18362.449.0
 
-The project was run through both [HTML Validation](https://validator.w3.org/) and [CSS Validation](https://jigsaw.w3.org/css-validator/validator) with no errors found.
+The project was run through both [HTML Validation](https://validator.w3.org/) and [CSS Validation](https://jigsaw.w3.org/css-validator) with no errors found.
 
 I had originally planned to test my project with Jasmine testing, but with the way my project ended up it would require me to write extra code just to be able to test functions. With that in mind, I did manual testing which can be seen [here](https://github.com/filleben/F1MemoryGame/tree/master/testing/js-testing.pdf)
 
@@ -196,7 +196,7 @@ HTML and CSS tests carried out have been documented and visualised [here](https:
 ### Issues Found During Testing
 
 - Background image repeated vertically on mobile devices, fixed by adding further styling options to the body.
-- While testing on other browsers other than Firefox which was used during site development, I released that the high score wasn't being saved, this issue was fixed by adding localStorage.setItem to my setHighScore() function.
+- While testing on browsers other than Firefox which was used during site development, I released that the high score wasn't being saved, this issue was fixed by adding localStorage.setItem to my setHighScore() function.
 - If the game was being played for the first time the "High Score:" would display undefined until it was set when you beat the game, this issue was fixed by adding an if statement inside the document ready function.
 
 <span id="deployment"></span>
