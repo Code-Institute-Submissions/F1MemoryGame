@@ -162,7 +162,7 @@ class MemoryGame {
     playBackgroundMusic() {
         var bgMusic = new Audio('assets/audio/F1_theme-8-bit_version.mp3')
         bgMusic.play();
-        bgMusic.volume = 0.5;
+        bgMusic.volume = 0.3;
         bgMusic.loop = true;
         //Mutes background music on click
         $('#on').click(function () {
