@@ -4,6 +4,7 @@
 /*------See ReadME for source of some body styling-*/
 body {
     margin: 0;
+    color: #fff;
     font-family: 'Racing Sans One', sans-serif;
     background: url("../images/background-image.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -12,22 +13,32 @@ body {
     background-size: cover;
 }
 
+/*------Mouse Cursor Styling-*/
+#start,
+#game-hard,
+#game-easy,
+#how-to-play,
+#contact,
+#on,
+#off,
+.btn-contact {
+    cursor: pointer;
+}
+
 /*------Title Text Styling-*/
 .title {
     text-align: center;
-    color: #fff;
     font-size: 3.125rem;
     font-weight: normal;
 }
 
 /*------Audio Toggle Styling-*/
 .audio-toggle {
-    color: #fff;
     text-align: center;
     font-size: 1.25rem;
 }
 
-.audio-toggle .audio-status {
+.audio-status {
     text-decoration: underline;
     font-weight: 900;
     font-size: 1.5rem;
@@ -52,7 +63,6 @@ body {
 }
 
 .game-info {
-    color: #fff;
     font-size: 1.5625rem;
 }
 
@@ -155,7 +165,6 @@ body {
     bottom: 0;
     justify-content: center;
     align-items: center;
-    color: #fff;
     z-index: 1;
 }
 
