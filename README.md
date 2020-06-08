@@ -61,6 +61,7 @@ The wireframes were made using [Balsamiq](https://balsamiq.cloud)
 - **Contact Form**: Allows users to contact me directly to report any bugs with the game.
 - **Success/Failed Messages**: Tells users if they successfully contacted me or not.
 - **Music**: 8-bit Formula 1 theme plays when you begin the game.
+- **Music Toggle**: Music can be turned on and off as you play.
 - **Game Timer**: When the game starts a timer begins counting down from 100 when it hits zero the game is over.
 - **Move Counter**: Counts how many moves a user makes while playing.
 - **Scoring System**: Users get points for each match they find, the quicker they find a match the more points they will receive.
