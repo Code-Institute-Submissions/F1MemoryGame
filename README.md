@@ -166,17 +166,17 @@ HTML and CSS tests carried out have been documented and visualised [here](https:
    - The feedback I have received so far indicates that this is true.
 
 2. Cards are shuffled every game:
-  1. Click on "Click to Start", cards are shuffled.
-  2. Beat the game.
-  3. Click on "Restart", cards are shuffled.
+    1. Click on "Click to Start", cards are shuffled.
+    2. Beat the game.
+    3. Click on "Restart", cards are shuffled.
 
 3. Game is Scored:
-  1. Click on "Click to Start".
-  2. Get a match in the game, Score increases.
+    1. Click on "Click to Start".
+    2. Get a match in the game, Score increases.
 
 4. Instructions on how to play the game:
-  1. Click on "How to Play"
-  2. View instructions.
+    1. Click on "How to Play"
+    2. View instructions.
 
 ### All tests performed with no errors found.
 
