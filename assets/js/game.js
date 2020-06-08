@@ -37,6 +37,7 @@ $(document).ready(function () {
     $('#game-over-restart, #victory-restart').click(function () {
         location.reload();
     });
+
 });
 
 class MemoryGame {
@@ -148,10 +149,25 @@ class MemoryGame {
     }
     //Plays background music, repeats on song end
     playBackgroundMusic() {
-        this.bgMusic = new Audio('assets/audio/F1_theme-8-bit_version.mp3')
-        this.bgMusic.play();
-        this.bgMusic.volume = 0.5;
-        this.bgMusic.loop = true;
+        var bgMusic = new Audio('assets/audio/F1_theme-8-bit_version.mp3')
+        bgMusic.play();
+        bgMusic.volume = 0.5;
+        bgMusic.loop = true;
+        //Mutes background music on click
+        $('#on').click(function () {
+            $(bgMusic).each(function () {
+                $(bgMusic).prop('muted', false);
+            });
+            $('#off').removeClass("audio-status")
+            $(this).addClass("audio-status")
+        });
+        $('#off').click(function () {
+            $(bgMusic).each(function () {
+                $(bgMusic).prop('muted', true);
+            });
+            $('#on').removeClass("audio-status")
+            $(this).addClass("audio-status")
+        });
     }
     //Calculates score, score for each match is dependent on how quickly the match happens, the quicker the match the higher the score
     //Some code was sourced from Stack Overflow see ReadME
