@@ -1,6 +1,7 @@
 //While coding this I followed a tutorial to achieve basic game functionality, then built my own features on top of that code, see credits in ReadME
 
 $(document).ready(function () {
+
     //Displays high score, displays 0 if high score isnt set
     var highScore = localStorage.getItem("highScore");
     if (highScore == null) {
@@ -8,15 +9,19 @@ $(document).ready(function () {
     } else {
         document.getElementById('high-score').innerText = localStorage.getItem("highScore");
     }
+
     //Create Array from all elements with the 'card' class
     let cards = Array.from(document.getElementsByClassName('card'));
+
     //Calls the MemoryGame class and card array, sets the game timer
     let game = new MemoryGame(100, cards);
+
     //Starts the game when 'Click to Start' is clicked on landing overlay
     $('#start').click(function () {
         $(this).parent().removeClass('visible');
         game.startGame();
     });
+
     //Toggle game difficulty
     $('#game-hard').click(function () {
         $(this).addClass("game-mode");
@@ -28,24 +33,29 @@ $(document).ready(function () {
         $('#game-hard').removeClass("game-mode");
         $('.manufacturer').css("display", "flex");
     });
+
     //Hard Mode explaination on hover
     $("#game-hard").attr('title', 'Enabling this will remove the car manufacturer from each card.');
+
     //Flips the cards on click
     cards.forEach(card => {
         card.addEventListener('click', () => {
             game.flipCard(card);
         });
     });
+
     //Opens game instructions
     $("#how-to-play").click(function () {
         $("#instructions").slideToggle("slow");
         $("#contact-form").slideUp("slow");
     });
+
     //Opens contact form
     $("#contact").click(function () {
         $("#contact-form").slideToggle("slow");
         $("#instructions").slideUp("slow");
     });
+
     //Restarts the game by reloading the page when 'Restart' is clicked on game over and victory overlay
     $('#game-over-restart, #victory-restart').click(function () {
         location.reload();
@@ -54,6 +64,7 @@ $(document).ready(function () {
 });
 
 class MemoryGame {
+
     //Game Constructor
     constructor(totalTime, cards, score) {
         var score = 0;
@@ -64,6 +75,7 @@ class MemoryGame {
         this.time = document.getElementById('time-remaining');
         this.moveTicker = document.getElementById('moves');
     }
+
     //Start Game Function wont let any cards be flipped for 0.5 secs
     startGame() {
         this.cardToCheck = null;
@@ -78,11 +90,13 @@ class MemoryGame {
             this.countDown = this.startCountDown();
         }, 500);
     }
+
     //Stops cards being fliped if there is a animation happening, if the card is part of a matched pair already, 
     //and stops the same card being clicked once its been flipped
     canFlipCard(card) {
         return !this.busy && !this.matchedCards.includes(card) && card !== this.cardToCheck;
     }
+
     //Flip card function adds 1 to total moves
     flipCard(card) {
         if (this.canFlipCard(card)) {
@@ -96,6 +110,7 @@ class MemoryGame {
             };
         }
     }
+
     //Card shuffling algorithm based on Fisher-Yates shuffle
     shuffleCards(cardArray) {
         for (let i = cardArray.length - 1; i > 0; i--) {
@@ -104,20 +119,23 @@ class MemoryGame {
             cardArray[i].style.order = randIndex;
         }
     }
+
     //Timer function, removes 1 every second
     startCountDown() {
         return setInterval(() => {
             this.timeRemaining--;
-            this.time.innerText = this.timeRemaining;
+            this.time.innerText = this.timeRemaining
             if (this.timeRemaining === 0)
                 this.gameOver();
         }, 1000);
     }
+
     //Game Over Function called when you lose
     gameOver() {
         clearInterval(this.countDown);
         $('#game-over').addClass('visible')
     }
+
     //Victory Function called when you beat the game
     victory() {
         clearInterval(this.countDown);
@@ -128,10 +146,12 @@ class MemoryGame {
 
         document.getElementById('high-score').innerText = localStorage.highScore;
     }
+
     //Returns the value of the card i.e. what car you clicked
     getCardType(card) {
         return card.getElementsByClassName('f1-car')[0].src;
     }
+
     //Checks for two matching cards
     checkForCardMatch(card) {
         if (this.getCardType(card) === this.getCardType(this.cardToCheck))
@@ -141,6 +161,7 @@ class MemoryGame {
 
         this.cardToCheck = null;
     }
+
     //Card Match function pushes matched cards into matchedArray, checks for victory
     cardMatch(card1, card2) {
         this.matchedCards.push(card1);
@@ -151,6 +172,7 @@ class MemoryGame {
         if (this.matchedCards.length === this.cardArray.length)
             this.victory();
     }
+
     //Cards Mis Match Function, hides both cards
     cardMisMatch(card1, card2) {
         this.busy = true;
@@ -160,12 +182,14 @@ class MemoryGame {
             this.busy = false;
         }, 1000);
     }
+
     //Plays background music, repeats on song end
     playBackgroundMusic() {
         var bgMusic = new Audio('assets/audio/F1_theme-8-bit_version.mp3')
         bgMusic.play();
         bgMusic.volume = 0.3;
         bgMusic.loop = true;
+
         //Mutes background music on click
         $('#on').click(function () {
             $(bgMusic).each(function () {
@@ -182,6 +206,7 @@ class MemoryGame {
             $(this).addClass("audio-status")
         });
     }
+
     //Calculates score, score for each match is dependent on how quickly the match happens, the quicker the match the higher the score
     //Some code was sourced from Stack Overflow see ReadME
     calculateScore() {
@@ -217,6 +242,7 @@ class MemoryGame {
             this.score += 50;
         }
     }
+    
     //Sets the high score
     setHighScore() {
         localStorage.setItem("highScore", this.score);
